@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	.droptbn {
+		background-color: #7FAD39;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		font-size: 32px;
+		cursor: pointer;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+	}
+	.dropdown {
+		position: relative;
+		display:inline-block;
+		
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #F5F5F5;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 1;		
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display:block;	
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown:hover .dropbtn {
+		background-color: #3e8e41;
+	}
+	input[type=text] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: 3px solid #ccc;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+		outline: none;
+	}
+	input[type=text]:focus {
+		border: 3px solid #555;
+	}
+	.loginbutton {
+		background-color: #7FAD39;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+	</style>
+<body>
+	<table>
+		<table style = "width: 100%;background-color:#F5F5F5">
+			<tr>
+				<td style="width: 1px;"><img src="letter.png" alt = "email" style = "padding: 5px"></td>
+				<td style = "border-right: 1px solid gray;padding-right: 15px">oradd7451@gmail.com</td>
+				<td style="width: 80%;padding-left: 15px">Free shipping all orders of $99</td>
+				<td style="border-right: 1px solid gray;padding-right: 10px"><img src ="socialmedia.png" alt = "socialmedia" style = ""></td>
+				<td style="width: 10%;padding-left: 5px"><img src="language.png" alt = "language" style ="padding-left: 5px;padding-right: 5px">English</td>
+				<td style = "width: 7%"><img src="user.png" alt = "user" style = "width: 16px;padding-right: 5px;padding-left: 5px">
+					<a href="url">Login</a>
+				</td>
+			</tr>
+			<tr>
+				<table style="width: 100%">
+					<tr style="width: 100%;font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'">
+						<td style = "width:11%"><img src="Ogani.png" alt = "ogani"></td>
+						<td align="left" style="width: 5%;">HOME</td>
+						<td align="left" style="width: 5%;">SHOP</td>
+						<td align="left" style="width: 5%;">PAGE</td>
+						<td align="left" style="width: 5%;">BLOG</td>
+						<td align="left" style="width: 5%;">CONTACT</td>
+						<td style="width: 1%"><img src="heart-black-shape-for-valentines.png" alt = "heart"></td>
+						<td style="width: 1%"><img src="shopping-bag.png" alt = "bag"></td>
+						<td align="right" style="width:1%">items</td>
+						<td align="left" style="width:5%">$150.00</td>
+					</tr>
+				</table>
+			</tr>
+			<tr>
+				<table style = "width: 100%">
+					<tr>
+						<td align="center" rowspan="2" style = "width: 10%;background-color: #7FAD39;color: white;font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'"><img src="burger.png" alt = "burger" style="padding-left: 10px;padding-right: 10px">All Departments</td>
+						<td rowspan="2" style = "width: 5%"></td>
+						<td rowspan="2" style = "width: 10%;border:none;padding-left: 20px">
+							<div class="dropdown">
+								<button class="dropbtn" style="padding: 16px 56px;color:white;background-color:#7FAD39">All Catagories</button>
+								<div class ="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+								</div>
+							</div>
+						</td>
+						<td rowspan="2" style="border:none;padding-left: 20px;">
+							<form>
+								<input type="text" id="things" name="things" value="what do u need?">
+							</form>
+						</td>
+						<td rowspan="2" align="center" style = "width: 12%;background: #7FAD39;color: white;font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', 'Arial Black', 'sans-serif'">SEARCH</td>
+						<td rowspan="2" align="right" style="width: 5%;padding-right: 30px"><img src="call.png" alt = "call" style ="width: 40%"></td>
+						<td >+66 666 6666</td>	
+					</tr>
+					<tr>
+						<td>support 24/7</td>
+						<tr>
+							<td></td>
+							<td></td>
+							<td rowspan="12" colspan="7" valign="middle">
+								<table align="center" style="vertical-align: middle;">
+									<tr>
+										<td style="padding-left: 50px">
+											<form>
+												<label for="login">Username</label>
+												<input type="text" id="login" name="login" value=""><br>
+												<label for="pass">Password</label>
+												<input type="text" id="pass" name="pass" value="">
+											</form>
+											<form align="center">
+												<button class="loginbutton">
+													<a href="htmlloginpage.html">Sign In</a>
+												</button>
+											</form>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tr>
+					<tr style = "width: 10%"><td align="left" style = "padding-left: 50px;padding-top: 20px;width: 20%">Fresh Meat</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Vegetable</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Fruit & Nut</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Fresh Berries</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Ocean Food</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Butter & Eggs</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Fastfood</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Fresh Onion</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Papaya & Crisps</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Oatmeal</td></tr>
+					<tr><td align="left" style = "padding-left: 50px;padding-top: 20px">Fresh Banana</td></tr>		
+				</table>
+			</tr>
+		</table>
+	</table>
+</body>
+</html>
+</html>
